@@ -27,4 +27,4 @@ An example of a transformer is the `StandardScaler` in scikit-learn, which learn
 Sometimes, the built-in estimators might not meet specific requirements. In such cases, scikit-learn allows creating custom estimators by extending base classes like `BaseEstimator` and implementing required methods such as `fit` for learning from data and optionally `predict` for making predictions.
 
 ### Example of Custom Estimator
-The `MostFrequentClassClassifier` custom estimator learns and predicts the most frequent class from the training data. It extends `BaseEstimator` and `ClassifierMixin`, implementing `fit` to learn from data and `predict` to make predictions based on the most frequent class found during fitting.
+Will be implementing simple custom estimator to  understand how to construct a custom estimator. We will create a`MostFrequentClassClassifier` custom estimator which learns and predicts the most frequent class from the training data. It extends `BaseEstimator` and `ClassifierMixin`, implementing `fit` to learn from data and `predict` to make predictions based on the most frequent class found during fitting.
