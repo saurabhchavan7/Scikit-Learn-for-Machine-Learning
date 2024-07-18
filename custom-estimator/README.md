@@ -28,3 +28,16 @@ Sometimes, the built-in estimators might not meet specific requirements. In such
 
 ### Example of Custom Estimator
 Will be implementing simple custom estimator to  understand how to construct a custom estimator. We will create a`MostFrequentClassClassifier` custom estimator which learns and predicts the most frequent class from the training data. It extends `BaseEstimator` and `ClassifierMixin`, implementing `fit` to learn from data and `predict` to make predictions based on the most frequent class found during fitting.
+
+## Mixins in scikit-learn
+
+### Definition
+Mixins in scikit-learn are classes that provide additional methods and functionalities to estimators.
+
+### Purpose
+While base estimators have basic methods like `fit` and `predict`, mixins add extra methods for tasks such as scoring and classification.
+
+### Examples
+- **ClassifierMixin**: Adds scoring functions to classifiers.
+- **RegressorMixin**: Adds scoring functions to regressors.
+- **TransformerMixin**: Adds `fit_transform` method to transformers.
